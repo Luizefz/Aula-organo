@@ -53,7 +53,9 @@ export const Formulario = (props) => {
                     valor={time}
                     aoAlterar={valor => setTime(valor)}
                 />
-                <Botao texto='Criar card' />
+                <Botao>
+                    Criar Card
+                </Botao>
             </form>
         </section>
     )
