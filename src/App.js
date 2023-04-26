@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App">
       <Cabecalho />
-      <Banner />
+      <Banner enderecoImagem='/images/banner.png' />
       <Formulario
         aoColaboradorCadastrado={colaborador => addNovoColaborador(colaborador)} //Recebe os dados de "dentro da tag" e joga para consumo da função
         times={times.map(time => time.nome)}
