@@ -1,6 +1,6 @@
 import React from 'react'
 import './Time.css'
-import { IColaborador } from '../../shared/interfaces/iColaborador'
+import { IColaborador } from '../../shared/interfaces/IColaborador'
 import Colaborador from '../Colaborador'
 
 interface TimeProps {
@@ -12,7 +12,7 @@ interface TimeProps {
 
 const Time = (props: TimeProps) => {
     return (
-        (props.colaboradores.length) ?
+        (props.colaboradores.length > 0) ?
             <section className='time' style={{ backgroundColor: props.corSecundaria }}>
                 <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
                 <div className='colaboradores'>
@@ -27,7 +27,7 @@ const Time = (props: TimeProps) => {
                     )}
                 </div>
             </section>
-            : ' '
+            : <></>
     )
 }
 
