@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
-import { IColaborador } from '../../shared/interfaces/iColaborador'
+import { IColaborador } from '../../shared/interfaces/IColaborador'
 
 interface FormularioProps {
     aoColaboradorCadastrado: (colaborador: IColaborador) => void
